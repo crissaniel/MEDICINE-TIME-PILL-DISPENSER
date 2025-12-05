@@ -18,6 +18,15 @@ The system has **5 slots for medicine storage** (to be stored manually) ready fo
   
 Of course in the simulation it doesn't really count down to the preset time intervals so only 5s, 10s, 15s, and 20s (respectively) are set. Moreover, a number of intervals is also decided by the user, but its only **limited within the day**. Setting up the time interval is done statically, so setting the first interval would set it to the first slot of the system-- next interval would go to the second slot, and so on.
 
+**ALARM SYSTEM**
+
+When the timer counts down to zero, a red LED turns on along with an alarm (a buzzer) that goes off a long beep, and it could only stop once the user presses the dispense button (an interrupt to the CPU).
+
+**DISPENSING MECHANISM**
+
+Once the user presses the dispense button-- one of the 5 motors would turn for a couple of seconds to simulate one of the slots opening and dispense the medicine to the user.
+
 ## PROBLEMS/LIMITATIONS
 - The startup screen of the LCD is bugged.
 - The storing of the medicines is static.
+- Dispensing of the medicines is done one motor at a time, so not motors could dispense together.
